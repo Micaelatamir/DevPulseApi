@@ -19,7 +19,6 @@
   <ItemGroup>
     <Folder Include="Configurations\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Repositories\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
