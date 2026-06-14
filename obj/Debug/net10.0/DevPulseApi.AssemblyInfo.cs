@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DevPulseApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbc0994d713cb1876fdc7d750e6ca939e8fe1c28")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e16f3f2632199e755fb44c3752ecf1e0dd800c14")]
 [assembly: System.Reflection.AssemblyProductAttribute("DevPulseApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DevPulseApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
