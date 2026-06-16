@@ -1,0 +1,18 @@
+﻿services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 252026
+      POSTGRES_DB: devpulsedb
+    ports:
+      - "5432:5432"
+
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=devpulsedb;Username=postgres;Password=252026
+    depends_on:
+      - db
