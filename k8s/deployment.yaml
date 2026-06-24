@@ -1,0 +1,25 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devpulseapi
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devpulseapi
+  template:
+    metadata:
+      labels:
+        app: devpulseapi
+    spec:
+      containers:
+        - name: devpulseapi
+          image: devpulseapi:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ConnectionStrings__DefaultConnection
+              valueFrom:
+                secretKeyRef:
+                  name: devpulse-secrets
+                  key: connection-string
